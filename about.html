@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caudex&family=Istok+Web&family=Karla:wght@200&family=Nanum+Myeongjo&family=Roboto:wght@100&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <title>Your Tourism Website</title>
+    <style>
+        /* Reset some default styles for better consistency */
+        
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        /* Basic styling for the page */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        header {
+            background-color: #2323a4;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header ul {
+            list-style: none;
+            text-align: right;
+            margin-right: 1rem;
+        }
+        
+        header li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+        /* Responsive design using media queries */
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header ul {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            header li {
+                display: block;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+        }
+        /* Style the footer */
+        
+        footer {
+            background-color: #252b2d;
+            color: #fff;
+            padding: 20px 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo img {
+            max-width: 100px;
+        }
+        
+        .footer-links ul {
+            display: flex;
+        }
+        
+        .footer-links li {
+            margin-right: 20px;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer-social ul {
+            display: flex;
+        }
+        
+        .footer-social li {
+            margin-right: 15px;
+        }
+        
+        .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .footer-info a {
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Responsive design */
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-links ul {
+                margin-top: 15px;
+            }
+            .footer-links li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .footer-social ul {
+                margin-top: 15px;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7ed;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffeeda;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        
+        .team-member .info {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Brokpas.com</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"></i><i class="fa fa-home"></i>&nbsp;Home</a>
+                </li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;About</a></li>
+                <li><a href="attraction.html"><i class="fa fa-map-marker"></i>&nbsp;Attraction</a></li>
+                <li><a href="Packages.html"><i class="fa fa-gift"></i>&nbsp;Packages</a></li>
+                <li><a href="home.html"><i class="fa fa-home"></i>&nbsp;Home-Stay</a></li>
+                <li><a href="services.html"><i class="fa fa-cogs"></i>&nbsp;Our-services</a></li>
+                <li><a href="#"><i class="fa fa-volume-control-phone">&nbsp;</i>Contact</a></li>
+                <a href="#" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>&nbsp;&nbsp;&nbsp;
+                <a href="#" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2></h2>
+        <div class="team-member">
+            <img src="https://i.dailymail.co.uk/i/pix/2016/07/11/17/36299C3100000578-3684601-image-a-208_1468253937454.jpg" alt="Team Member 1">
+            <div class="info">
+                <p>The Vision The tourism industry in Bhutan is founded on the principle of sustainability, meaning that tourism must be environmentally and ecologically friendly, socially and culturally acceptable and economically viable. The Royal Government
+                    of Bhutan recognizes that tourism is a world-wide phenomenon and an important means of achieving socioeconomic development particularly for a developing country like Bhutan. It believes that tourism, in affording the opportunity to
+                    travel, can help to promote a deeper understanding among people and to strengthen ties of friendship based on a deeper appreciation and respect for different cultures and lifestyles. Towards achieving this objective, the Royal Government,
+                    has adopted a very cautious approach to growth and development of the tourism industry in Bhutan. Its tremendous potential as a truly indigenous industry and the clear comparative advantages Bhutan enjoys, are compelling reasons to
+                    promote Bhutan as a high-end tourist destination in a manner which accords with the tenets of Gross National Happiness</p>
+            </div>
+        </div>
+        <hr>
+        <h2>BACKGROUND</h2>
+        <div class="team-member">
+            <img src="https://i.dailymail.co.uk/i/pix/2016/07/11/17/36299C0800000578-3684601-image-a-201_1468253937442.jpg" alt="Team Member 2">
+            <div class="info">
+                <p>The Permanent Mission of the Kingdom of Bhutan to the United Nations and Other International Organizations was established on March 15, 1985 and is one of the eight resident embassies/missions that the Royal Government of Bhutan maintains
+                    abroad. PMB, Geneva is one of the two posts (along with the Mission in New York) that represent Bhutan's interests in the United Nations system. The Permanent Mission is also accredited to the United Nations Office and UNIDO in Vienna,
+                    FAO, WFP and IFAD in Rome, UNESCO in Paris and UNEP in Nairobi. The Permanent Mission protects and advances Bhutan's national interests on the front lines of multilateral diplomacy on issues as diverse as human rights, global health,
+                    economic development, trade, the environment, agriculture, culture and disarmament The Permanent Mission also serves as the Embassy of the Kingdom of Bhutan to Switzerland, Austria, and Norway.</p>
+            </div>
+        </div>
+        <hr>
+        <h3>TOURISM LEVY</h3>
+        <div class="team-member">
+            <img src="https://i.dailymail.co.uk/i/pix/2016/07/11/17/36299B9200000578-3684601-image-a-200_1468253937441.jpg" alt="Team Member 3">
+            <div class="info">
+                <p>Tourism Levy A tourist must pay a tourism levy known as the Sustainable Development Fee (SDF) of USD 200 per night, which may be revised from time to time by the Competent Authority. The Sustainable development Fee enables investment in
+                    transformative programs that preserve our culture traditions, protect our heritage and environment, upgrade infrastructure, create opportunities for our younger generations and build resilience. Guests from India are levied SDF of
+                    Nu. 1,200 or equivalent amount in INR per person per night, which will remain in effect for two years, following which time it may be reviewed and revised in keeping with the principle of the preferential rate after two years. The
+                    Minimum Daily Package Rate (MDPR) is being phased out. Tourists will be able to engage service providers directly and pay for their services accordingly.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=100&amp;hl=en&amp;q=sakteng&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <a href="https://connectionsgame.org/">Connections NYT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h3>Popular Attractions</h3>
+                <hr>
+                <a href="">Arts & Crafts</a><br>
+                <a href="">People, Society & Religion</a><br>
+                <a href="">History & Myths</a><br>
+                <a href="">Geography & Geology</a><br>
+                <hr>
+                <small><b>&copy; 2023 Your Website Name. All rights reserved.</b></small>
+            </div>
+            <div class="footer-info">
+                <h3>Contact Info</h3>
+                <hr>
+                <a href="">Trashigang: Sakteng</a><br>
+                <a href=""> +975 77695908</a><br>
+                <a href="">+975 17430563</a><br>
+            </div>
+            <div class="footer-content">
+                <div class="paypal-icon">
+                    <a href=""></a><i class="fab fa-paypal">Paypal</i>
+                </div>
+    </footer>
+</body>
+
+</html>

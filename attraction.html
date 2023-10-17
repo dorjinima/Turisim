@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caudex&family=Istok+Web&family=Karla:wght@200&family=Nanum+Myeongjo&family=Roboto:wght@100&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <title>Your Tourism Website</title>
+    <style>
+        /* Reset some default styles for better consistency */
+        
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        /* Basic styling for the page */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        header {
+            background-color: #2323a4;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header ul {
+            list-style: none;
+            text-align: right;
+            margin-right: 1rem;
+        }
+        
+        header li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+        /* Responsive design using media queries */
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header ul {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            header li {
+                display: block;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+        }
+        /* Style the footer */
+        
+        footer {
+            background-color: #252b2d;
+            color: #fff;
+            padding: 20px 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo img {
+            max-width: 100px;
+        }
+        
+        .footer-links ul {
+            display: flex;
+        }
+        
+        .footer-links li {
+            margin-right: 20px;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer-social ul {
+            display: flex;
+        }
+        
+        .footer-social li {
+            margin-right: 15px;
+        }
+        
+        .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .footer-info a {
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Responsive design */
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-links ul {
+                margin-top: 15px;
+            }
+            .footer-links li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .footer-social ul {
+                margin-top: 15px;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7ed;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fee6c8;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .attraction {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffeeda;
+            border-radius: 5px;
+        }
+        
+        .attraction img {
+            max-width: 100%;
+            height: auto;
+            align-items: center;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Brokpas.com</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"></i><i class="fa fa-home"></i>&nbsp;Home</a>
+                </li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;About</a></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i>&nbsp;Attraction</a></li>
+                <li><a href="Packages.html"><i class="fa fa-gift"></i>&nbsp;Packages</a></li>
+                <li><a href="home.html"><i class="fa fa-home"></i>&nbsp;Home-Stay</a></li>
+                <li><a href="services.html"><i class="fa fa-cogs"></i>&nbsp;Our-services</a></li>
+                <li><a href="#"><i class="fa fa-volume-control-phone">&nbsp;</i>Contact</a></li>
+                <a href="#" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>&nbsp;&nbsp;&nbsp;
+                <a href="#" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="attraction">
+            <img src="https://data.tibettravel.org/assets/images/bhutan/bhutan-trekking/view-of-Sakten-Village-380.jpg" alt="Attraction 1">
+            <h2>Attraction 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex eget elit dignissim vestibulum.</p>
+        </div>
+        <div class="attraction">
+            <img src="attraction2.jpg" alt="Attraction 2">
+            <h2>Attraction 2</h2>
+            <p>Phasellus eu velit nec nisl commodo ullamcorper. Curabitur auctor metus id libero aliquam fermentum.</p>
+        </div>
+        <div class="attraction">
+            <img src="attraction3.jpg" alt="Attraction 3">
+            <h2>Attraction 3</h2>
+            <p>Vivamus auctor justo id sapien efficitur bibendum. Fusce ut lacus eget libero facilisis vehicula.</p>
+        </div>
+        <div class="attraction">
+            <img src="attraction2.jpg" alt="Attraction 2">
+            <h2>Attraction 2</h2>
+            <p>Phasellus eu velit nec nisl commodo ullamcorper. Curabitur auctor metus id libero aliquam fermentum.</p>
+        </div>
+        <div class="attraction">
+            <img src="attraction3.jpg" alt="Attraction 3">
+            <h2>Attraction 3</h2>
+            <p>Vivamus auctor justo id sapien efficitur bibendum. Fusce ut lacus eget libero facilisis vehicula.</p>
+        </div>
+        <div class="attraction">
+            <img src="attraction2.jpg" alt="Attraction 2">
+            <h2>Attraction 2</h2>
+            <p>Phasellus eu velit nec nisl commodo ullamcorper. Curabitur auctor metus id libero aliquam fermentum.</p>
+        </div>
+        <div class="attraction">
+            <img src="attraction3.jpg" alt="Attraction 3">
+            <h2>Attraction 3</h2>
+            <p>Vivamus auctor justo id sapien efficitur bibendum. Fusce ut lacus eget libero facilisis vehicula.</p>
+        </div>
+        <div class="attraction">
+            <img src="attraction2.jpg" alt="Attraction 2">
+            <h2>Attraction 2</h2>
+            <p>Phasellus eu velit nec nisl commodo ullamcorper. Curabitur auctor metus id libero aliquam fermentum.</p>
+        </div>
+        <div class="attraction">
+            <img src="attraction3.jpg" alt="Attraction 3">
+            <h2>Attraction 3</h2>
+            <p>Vivamus auctor justo id sapien efficitur bibendum. Fusce ut lacus eget libero facilisis vehicula.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=100&amp;hl=en&amp;q=sakteng&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <a href="https://connectionsgame.org/">Connections NYT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h3>Popular Attractions</h3>
+                <hr>
+                <a href="">Arts & Crafts</a><br>
+                <a href="">People, Society & Religion</a><br>
+                <a href="">History & Myths</a><br>
+                <a href="">Geography & Geology</a><br>
+                <hr>
+                <small><b>&copy; 2023 Your Website Name. All rights reserved.</b></small>
+            </div>
+            <div class="footer-info">
+                <h3>Contact Info</h3>
+                <hr>
+                <a href="">Trashigang: Sakteng</a><br>
+                <a href=""> +975 77695908</a><br>
+                <a href="">+975 17430563</a><br>
+            </div>
+            <div class="footer-content">
+                <div class="paypal-icon">
+                    <a href=""></a><i class="fab fa-paypal">Paypal</i>
+                </div>
+    </footer>
+</body>
+
+</html>

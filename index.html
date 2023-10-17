@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caudex&family=Istok+Web&family=Karla:wght@200&family=Nanum+Myeongjo&family=Roboto:wght@100&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <title>Your Tourism Website</title>
+    <style>
+        /* Reset some default styles for better consistency */
+        
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        /* Basic styling for the page */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff7ed;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        header {
+            background-color: #2323a4;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header ul {
+            list-style: none;
+            text-align: right;
+            margin-right: 1rem;
+        }
+        
+        header li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        #hero {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        #hero h1 {
+            font-size: 2.5rem;
+        }
+        
+        #hero p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        section {
+            padding: 2rem;
+        }
+        /* gallery edit */
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 50px;
+        }
+        
+        .photo {
+            width: 100%;
+        }
+        
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .caption {
+            text-align: center;
+        }
+        
+        section {
+            padding: 2rem;
+        }
+        /* Add this CSS to your existing styles or styles.css */
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 1600px;
+            background-color: #ffeeda;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+        
+        .image {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .text {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .text h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .text p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Responsive design using media queries */
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header ul {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            header li {
+                display: block;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+            .gallery {
+                gap: 10px;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .image,
+            .text {
+                padding: 10px;
+            }
+            .image-slider {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            #hero h1 {
+                font-size: 2rem;
+            }
+            #hero p {
+                font-size: 1rem;
+            }
+        }
+        /* Style the footer */
+        
+        footer {
+            background-color: #252b2d;
+            color: #fff;
+            padding: 20px 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo img {
+            max-width: 100px;
+        }
+        
+        .footer-links ul {
+            display: flex;
+        }
+        
+        .footer-links li {
+            margin-right: 20px;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer-social ul {
+            display: flex;
+        }
+        
+        .footer-social li {
+            margin-right: 15px;
+        }
+        
+        .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .footer-info a {
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Responsive design */
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-links ul {
+                margin-top: 15px;
+            }
+            .footer-links li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .footer-social ul {
+                margin-top: 15px;
+            }
+        }
+        
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        
+        .slide {
+            width: 100%;
+            height: 350px;
+            /* Set the fixed height as per your preference */
+            display: none;
+            transition: opacity 1s ease-in-out;
+            overflow: hidden;
+        }
+        
+        .active {
+            display: block;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensure the image fills the entire .slide */
+        }
+        
+        .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        @keyframes changeBanner {
+            0%,
+            100% {
+                opacity: 0;
+            }
+            20%,
+            80% {
+                opacity: 1;
+            }
+        }
+        
+        .mapouter {
+            position: relative;
+            text-align: right;
+            width: 450px;
+            height: 200px;
+        }
+        
+        .gmap_canvas {
+            overflow: hidden;
+            background: none!important;
+            width: 450px;
+            height: 200px;
+        }
+        
+        .gmap_iframe {
+            width: 450px!important;
+            height: 200px!important;
+        }
+        
+        .paypal-icon {
+            font-size: 36px;
+            color: white;
+            /* PayPal blue color */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Brokpas.com</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"></i><i class="fa fa-home"></i>&nbsp;Home</a>
+                </li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;About</a></li>
+                <li><a href="attraction.html"><i class="fa fa-map-marker"></i>&nbsp;Attraction</a></li>
+                <li><a href="Packages.html"><i class="fa fa-gift"></i>&nbsp;Packages</a></li>
+                <li><a href="home.html"><i class="fa fa-home"></i>&nbsp;Home-Stay</a></li>
+                <li><a href="services"><i class="fa fa-cogs"></i>&nbsp;Our-services</a></li>
+                <li><a href="#"><i class="fa fa-volume-control-phone">&nbsp;</i>Contact</a></li>
+                <a href="#" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>&nbsp;&nbsp;&nbsp;
+                <a href="#" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="slide active">
+            <img src="https://bhutansoul.com/wp-content/uploads/2020/01/Merakpic.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Casas_de_Merak.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="https://www.bletour.com/wp-content/uploads/2018/12/meraksaktenpic.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function changeSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Change slide every 5 seconds (5000 milliseconds)
+        setInterval(changeSlide, 5000);
+    </script>
+    <section id="hero">
+        <h2>Explore the beauty of the world with us</h2>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="image">
+                <img src="https://www.bletour.com/wp-content/uploads/2018/12/meraksaktenpic.jpg" alt="Destination 1">
+            </div>
+            <div class="text">
+                <h2>Merak Village </h2>
+                <p> Merak village, it is a home to the semi nomadic indigenous people known as the Brokpas (highlanders). The village is at an elevation of 3500m and falls under the Trashigang dzongkhag. Brokpas livelihood depends on yak herding. The settlement
+                    is approximately of 30 traditionally built houses. Men wear a thick red wool coat and women wear a red and white striped dress. Locals in the area claim the existence of Yeti however it is deemed a legend due to the lack of evidence
+                    to substantiate this claim.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text">
+                <h2>Sakteng Village</h2>
+                <p>Sakteng is an isolates valley of Brokpas, located North of Merak in Trashi Gang. Sakteng literally means bamboo field. Sakteng stands out as a distinct attraction in Bhutan. It offers unique semi nomadic lifestyle and culture. To get to
+                    Sakteng, one needs to drive for approx 1.5 hrs and trek for 2 days. The nearby Sakteng Wildlife Sanctuary is named after it. The Sanctuary is home to people of isolated nomadic tribes. It is characterized by thick carpets of rhododendrons,
+                    and in its habitat roam snow leopards, red pandas, Himalayan black bear, barking deer, Himalayan red fox, the hoary-bellied Himalayan squirrel and even the mythical Yeti (or the “Abominable Snowman”). Sakteng is virtually untouched
+                    by development.</p>
+            </div>
+            <div class="image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Casas_de_Merak.jpg" alt="Destination 2">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>EXPLORE SAKTENG AND MERAK</h2>
+        <div class="gallery">
+            <div class="photo">
+                <img src="https://cdn.drukasia.com/content/images/media/drukasia_021517_dsc04125-1070x727.jpg" alt="Gallery Photo 1">
+            </div>
+            <div class="photo">
+                <img src="https://www.mountainkingdoms.com/u/gallery/8-yeti-trek-eastern-bhutan-pass-before-the-rodang-la-g-hall.jpeg" alt="Gallery Photo 2">
+            </div>
+            <div class="photo">
+                <img src="https://cdn.bookmytour.bt/cms/uploads/2017/12/merakvillage.jpg" alt="Gallery Photo 3">
+            </div>
+            <div class="photo">
+                <img src="https://www.dailybhutan.com/pub_files/01000310522185/go-off-the-beaten-path-and-experience-enigmatic-eastern-bhutan_8364.jpg" alt="Gallery Photo 4">
+            </div>
+            <div class="photo">
+                <img src="https://cdn.drukasia.com/content/images/media/drukasia_021517_dsc03903-1070x713.jpg" alt="Gallery Photo 1">
+            </div>
+            <div class="photo">
+                <img src="https://www.heavenlybhutan.com/wp-content/uploads/2020/04/Dagala-Trek-1024x683.jpg" alt="Gallery Photo 2">
+            </div>
+            <div class="photo">
+                <img src="https://www.bhutanswallowtail.com/media/cache/b3/16/b316efa54a7ed7b80c824c5b4b204943.jpg" alt="Gallery Photo 3">
+            </div>
+            <div class="photo">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/1a/cc/c7/druk-path-trek-in-the.jpg" alt="Gallery Photo 4">
+            </div>
+            <div class="photo">
+                <img src="https://www.friendsadventure.com/images/bhutan-tours/druk-path-trek.jpg" alt="Gallery Photo 4">
+            </div>
+            <div class="photo">
+                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/72/4e/40.jpg" alt="Gallery Photo 1">
+            </div>
+            <div class="photo">
+                <img src="https://news.climate.columbia.edu/wp-content/uploads/2018/10/yak-bhutan.gif" alt="Gallery Photo 2">
+            </div>
+            <div class="photo">
+                <img src="https://images.fineartamerica.com/images-medium-large-5/a-herd-of-yaks-by-a-campfire-in-bhutan-peter-mcbride.jpg" alt="Gallery Photo 3">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="image">
+                <img src="https://yeegetaway.com/wp-content/uploads/2022/11/Jomo45-1-of-1-1-scaled.jpg" alt="Destination 1">
+            </div>
+            <div class="text">
+                <h2>Brokpas Culture </h2>
+                <p>Eons ago, there lived a tyrant king in Tshona, Tibet who tormented his people during his reign. One day he ordered the Brokpas to remove the head of a mountain as it was blocking the sun's rays from falling on his palace. Even after toiling
+                    day and night, the Brokpas couldn't even remove a small tip of the mountain. This was when Aum Jomo conspired with the people to put an end to the King's tyranny by killing him. It was after this incident that She led the Brokpas to
+                    the south and into Bhutan where they settled here.Brokpas are a very distinct tribe of people speaking a unique language. The dialect sounds like an interesting mix of kurtoep, Tibetan and sharchop. But the most distinct feature is
+                    their traditional attire. You ll be instantly mesmerized by what they wear the womens maroon pink jackets and skirts or the sheepskin that the men wear. It is quite a sight indeed.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>POPULAR ATTRACTIONS</h2>
+        <div class="gallery">
+            <div class="photo">
+                <img src="https://comdeksproject.files.wordpress.com/2014/02/red-panda-ailurus-fulgens-at-sakteng-wildlife-sanctuary-it-is-native-to-the-eastern-himalayas-and-classified-as-vulnerable-by-iucn.jpg?w=848" alt="Gallery Photo 1">
+            </div>
+            <div class="photo">
+                <img src="https://www.mountainkingdoms.com/u/gallery/8-yeti-trek-eastern-bhutan-pass-before-the-rodang-la-g-hall.jpeg" alt="Gallery Photo 2">
+            </div>
+            <div class="photo">
+                <img src="https://cdn.bookmytour.bt/cms/uploads/2017/12/merakvillage.jpg" alt="Gallery Photo 3">
+            </div>
+            <div class="photo">
+                <img src="https://bhutanjourneys.com/wp-content/uploads/2019/02/Merak-Sakteng-Trek3.jpg" alt="Gallery Photo 4">
+            </div>
+            <div class="photo">
+                <img src="https://cdn.drukasia.com/content/images/media/drukasia_021517_dsc03903-1070x713.jpg" alt="Gallery Photo 1">
+            </div>
+            <div class="photo">
+                <img src="https://www.heavenlybhutan.com/wp-content/uploads/2020/04/Dagala-Trek-1024x683.jpg" alt="Gallery Photo 2">
+            </div>
+            <div class="photo">
+                <img src="https://www.bhutanswallowtail.com/media/cache/b3/16/b316efa54a7ed7b80c824c5b4b204943.jpg" alt="Gallery Photo 3">
+            </div>
+            <div class="photo">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/1a/cc/c7/druk-path-trek-in-the.jpg" alt="Gallery Photo 4">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="image">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Tdse1bOY1CA?si=C3p8LdlWP45HsxBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <h2>Overview </h2>
+                <p>Merak Sakteng Trek is the newest trek in Bhutan and it promises an unparalleled cultural and natural experience in the nomadic villages of Merak and Sakteng. It stands out as a distinct attraction in Bhutan. Unlike anywhere else in the
+                    country, it offers trekkers to experience a unique semi-nomadic lifestyle, culture and dialect in one of the most scenic valleys. This trek runs through the protected area of Sakteng Wildlife Sanctuary (SWS) in Eastern Bhutan, which
+                    is home to endangered species like the snow leopard and red panda, and other animals like the Himalayan red fox and the Himalayan black bear.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=100&amp;hl=en&amp;q=sakteng&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <a href="https://connectionsgame.org/">Connections NYT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <h3>Popular Attractions</h3>
+                <hr>
+                <a href="">Arts & Crafts</a><br>
+                <a href="">People, Society & Religion</a><br>
+                <a href="">History & Myths</a><br>
+                <a href="">Geography & Geology</a><br>
+                <hr>
+                <small><b>&copy; 2023 Your Website Name. All rights reserved.</b></small>
+            </div>
+            <div class="footer-info">
+                <h3>Contact Info</h3>
+                <hr>
+                <a href="">Trashigang: Sakteng</a><br>
+                <a href=""> +975 77695908</a><br>
+                <a href="">+975 17430563</a><br>
+            </div>
+            <div class="footer-content">
+                <div class="paypal-icon">
+                    <a href=""></a><i class="fab fa-paypal">Paypal</i>
+                </div>
+    </footer>
+</body>
+
+</html>
